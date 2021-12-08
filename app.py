@@ -45,7 +45,7 @@ app.layout = html.Div(
         html.Div(
             [
                 # Navigation
-                html.P("Welcome to the Stock Dash App!", className="start"),
+                html.P("Stock Prediction", className="start"),
                 html.Div([
                     html.P("Input stock code: "),
                     html.Div([
@@ -110,7 +110,7 @@ app.layout = html.Div(
 ], [Input("submit", "n_clicks")], [State("dropdown_tickers", "value")])
 def update_data(n, val):  # inpur parameter(s)
     if n == None:
-        return "Hey there! Please enter a legitimate stock code to get details.", "https://melmagazine.com/wp-content/uploads/2019/07/Screen-Shot-2019-07-31-at-5.47.12-PM.png", "Stonks", None, None, None
+        return "กรุณาใส่ชื่อย่อหลักทรัพย์ที่ท่านสนใจ", "https://image.freepik.com/free-vector/gradient-stock-market-concept_23-2149166929.jpg", "Stonks", None, None, None
         # raise PreventUpdate
     else:
         if val == None:
